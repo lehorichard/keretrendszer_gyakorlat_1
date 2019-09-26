@@ -3,10 +3,10 @@ package filmpelda.model;
 import filmpelda.exeption.DateIsTooLate;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 public class Human {
-
-
+    private UUID id;
     private String firstName;
     private String lastName;
     private LocalDate birthDate;
@@ -19,6 +19,15 @@ public class Human {
         this.lastName = lastName;
         setBirthDate(birthDate);
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
     public String getFirstName() {
         return firstName;
     }
